@@ -8,6 +8,8 @@
     --oscuro: #1F271B;
     --dorado: #DC851F;
     --blanco: #ffffff;
+
+    --fuenteprincipal: 'Krub', sans-serif;
 }
 
 body, h1, h2, h3, p, a, ul, li, nav, section, header, footer {
@@ -178,6 +180,25 @@ h2 {
 h3 {
     text-align: center;
     color: var(--blanco);
+}
+.titulo_formulario{
+    font-family: var(--fuenteprincipal);
+    color : var(--oscuro);
+    text-align: center;
+    margin: 3%;
+    border-color: var(--amarillo_oscuro);
+    border-radius: 2%;
+    border-width: 2px;
+
+}
+.formulario{
+    display: flexbox;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+
+
+
 }
 
 /* Diseño responsive solo se incluye lo que se necesita modificar */
