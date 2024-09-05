@@ -150,7 +150,8 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    height: 850px; /* Ajusta la altura según tus necesidades */
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    width: 700px;
    
 }
 
@@ -158,6 +159,7 @@ body {
     display: flex;
     transition: transform 1s ease-in-out;
     height: 100%;
+    flex-shrink: 0;
 }
 
 .slider-image {

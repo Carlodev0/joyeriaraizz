@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const images = document.querySelectorAll('.slider-image');
     let currentIndex = 0;
     const totalImages = images.length;
-    const interval = 3000; // Tiempo en milisegundos (3 segundos)
+    const interval = 4000; // Tiempo en milisegundos (4 segundos)
 
     function showNextImage() {
         currentIndex = (currentIndex + 1) % totalImages;
