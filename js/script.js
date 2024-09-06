@@ -7,11 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const interval = 4000; // Tiempo en milisegundos (4 segundos)
 
     function showNextImage() {
-        currentIndex = (currentIndex + 1) % totalImages;
-        const offset = -currentIndex * 100;
-        sliderImages.style.transform = `translateX(${offset}%)`;
-    }
-
+      currentIndex = (currentIndex + 1) % totalImages;
+      const offset = -currentIndex * 100;
+      sliderImages.style.transform = `translateX(${offset}%)`;
+  }
     setInterval(showNextImage, interval);
 });
 
@@ -30,17 +29,27 @@ document.getElementById('form').addEventListener('submit', function(){
   // Validaciones
   if (nombre === '') {
     errorMessage += 'El nombre no puede estar vacío. ';
+  } else if (nombre != '' ){
+    console.log(`nombre es : ${nombre}`);
   }
   
   if (correo === '') {
     errorMessage += 'El correo electrónico no puede estar vacío. ';
-  } 
+    
+  } else if (correo != ''){
+    console.log(`correo es : ${correo}`);
+  }
   if (material === '') {
     errorMessage += 'El material no puede estar vacío. ';
-  }if (elemento === '') {
+  } else if(material != ''){
+    console.log(`material es : ${material}`);
+  }
+  if (elemento === '') {
     errorMessage += 'El N° elemento no puede estar vacío. ';
   } else if (isNaN(elemento) || elemento <= 0) {
     errorMessage += 'El elemento debe ser superior a 000 positivo. ';
+  } else if (elemento != ''){
+   console.log(`N° elemento es : ${elemento}`);
   }
 
   // Muestra errores o envía el formulario
@@ -60,10 +69,9 @@ function validateEmail(email) {
   return regex.test(email);
 }
  
-console.log(`nombre es : ${nombre}`);
-console.log(`correo es : ${correo}`);
-console.log(`material es : ${material}`);
-console.log(`N° elemento es : ${elemento}`);
+
+
+
 });
   
 
